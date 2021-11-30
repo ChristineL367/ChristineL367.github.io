@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Page Title</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="left">
+        <div class="navlink">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="navlink">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="brand">
+          <div>CHRISTINE LI</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items">
+
+        <div class="portfolio-item">
+          <div class="portfolio-img-background" style="background-image:url(pothos.jpg)"></div>
+          <div class="image-text-wrapper">
+
+            <div class="subtitle">Pothos</div>
+          </div>
+        </div>
+
+
+        <div class="portfolio-item">
+          <div class="portfolio-img-background"style="background-image:url(anthurium.jpg)"></div>
+          <div class="image-text-wrapper">
+
+            <div class="subtitle">Anthurium</div>
+          </div>
+
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-img-background"style="background-image:url(philodendron.jpg)"></div>
+          <div class="image-text-wrapper">
+
+            <div class="subtitle">Philodendron</div>
+          </div>
+
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-img-background"style="background-image:url(Monstera.jpg)"></div>
+          <div class="image-text-wrapper">
+
+            <div class="subtitle">Monstera</div>
+          </div>
+
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-img-background"style="background-image:url(succulent.jpg)"></div>
+          <div class="image-text-wrapper">
+
+            <div class="subtitle">Succulents</div>
+          </div>
+
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-img-background"style="background-image:url(calathea.jpg)"></div>
+          <div class="image-text-wrapper">
+
+            <div class="subtitle">Calathea</div>
+          </div>
+
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-img-background"style="background-image:url(alocasia.jpg)"></div>
+          <div class="image-text-wrapper">
+
+            <div class="subtitle">Alocasia</div>
+          </div>
+
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-img-background"style="background-image:url(fern.jpg)"></div>
+          <div class="image-text-wrapper">
+
+            <div class="subtitle">Fern</div>
+          </div>
+
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-img-background" style="background-image:url(cactus.jpg)"></div>
+          <div class="image-text-wrapper" alt="">
+
+              <div class="subtitle">Cactus</div>
+            </div>
+        
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </div>
+    </div>
+  </div>
+</body>
+<script>
+  const portfolioItems=document.querySelectorAll('.portfolio-item')
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+
+      portfolioItem.childNodes[1].classList.add('img-darken');
+    })
+    portfolioItem.addEventListener('mouseout', () => {
+
+      portfolioItem.childNodes[1].classList.remove('img-darken');
+    })
+
+  })
+</script>
+</html>
