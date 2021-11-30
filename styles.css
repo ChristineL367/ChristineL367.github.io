@@ -1,0 +1,107 @@
+
+body {
+  font-family: "Oswald", sans-serif;
+  margin:0px;
+}
+.container{
+  display:grid;
+  grid-template-columns: 1fr;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding:38px;
+}
+.left{
+  display:flex;
+
+}
+
+.navbar > .left > div{
+  margin-right:20px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.navlink{
+  height:22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.navlink a {
+  color:#8a8a8a;
+  text-decoration:none;
+  transition: color 0.5s;
+}
+.navlink:hover{
+  border-bottom: 1px solid black;
+}
+.navlink a:hover{
+  color:black;
+}
+.portfolio-items{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+}
+
+.portfolio-item{
+  position: relative;
+
+}
+.portfolio-img-background{
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  height:350px;
+  width:100%;
+}
+.image-text-wrapper{
+  position: absolute;
+  top:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  height:100%;
+  text-align:center;
+  padding-left:100px;
+  padding-right:100px;
+}
+
+.logo img{
+
+  width: 50%;
+  margin-bottom: 20px;
+}
+.image-text-wrapper .subtitle{
+  font-weight:600;
+  transition: .5s;
+  color:transparent;
+}
+.image-text-wrapper:hover .subtitle {
+  font-weight:1000;
+  font-size:2rem;
+  text-align: center;
+  color: white;
+}
+
+.img-darken{
+  transition: .5s;
+  filter: brightness(10%);
+}
+
+.two-column-wrapper{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+.profile-image-wrapper img{
+  width: 100%;
+}
+.profile-content{
+  padding:30px;
+
+}
+.profile-content h1{
+  color:lightseagreen;
+}
